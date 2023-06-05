@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Planets data</h1>
+    <table>
+        <colgroup>
+        <col>
+        <col>
+        <col style="border: 2px solid black;">
+        </colgroup>
+        <caption>
+            Data about the planets of our solar system (Planetary facts taken from <a
+                href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2">&nbsp;</th>
+                <th id="Name">Name</th>
+                <th id="Mass">Mass <br> (10<sup>24</sup>kg)</th>
+                <th id="Diameter"> Diameter <br> (km) </th>
+                <th id="Density'">Density<br>(kg/m<sup>3</sup>)</th>
+                <th id="Gravity">Gravity <br>(m/s<sup>2</sup>)</th>
+                <th id="Length">Length <br> of day <br>(hours)</th>
+                <th id="Distance">Distance <br> from Sun <br>(10<sup>6</sup>km)</th>
+                <th id="Mean">Mean <br> temperature <br>(°C)</th>
+                <th id="Number">Number <br> of <br> moons</th>
+                <th id="Notes" colspan="2">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                <th id="Terrestrial" colspan="2" rowspan="5">Terrestrial planets</th>
+                <tr>
+
+                <th id="Mercury" headers="Terrestrial Name">Mercury</th>
+                <td headers="Mercury Mass">0.330</td>
+                <td headers="Mercury Diameter">4,879</td>
+                <td headers="Mercury Desnity">5427</td>
+                <td headers="Mercury Gravity">3.7</td>
+                <td headers="Mercury Length">4222.6</td>
+                <td headers="Mercury Distance">57.9</td>
+                <td headers="Mercury Mean">167</td>
+                <td headers="Mercury Number">0</td>
+                <td headers="Mercury Notes">Closest to the Sun</td>
+            </tr>
+            <tr>
+                
+                <th id="Venus" headers="Terrestrial Name">Venus</th>
+                <td headers="Venus Mass">4.87</td>
+                <td headers="Venus Diameter">12,104</td>
+                <td headers="Venus Desnity">5243</td>
+                <td headers="Venus Gravity">8.9</td>
+                <td headers="Venus Length">2802.0</td>
+                <td headers="Venus Distance">108.2</td>
+                <td headers="Venus Mean">464</td>
+                <td headers="Venus Number">0</td>
+                <td headers="Venus Notes"></td>
+        
+            </tr>
+            <tr>
+                
+                <th id="Earth" headers="Terrestrial Name">Earth</th>
+                <td headers="Earth Mass">5.97</td>
+                <td headers="Earth Diameter">12,756</td>
+                <td headers="Earth Desnity">5514</td>
+                <td headers="Earth Gravity">9.8</td>
+                <td headers="Earth Length">24.0</td>
+                <td headers="Earth Distance">149.6</td>
+                <td headers="Earth Mean">15</td>
+                <td headers="Earth Number">1</td>
+                <td headers="Earth Notes">Our world</td>
+
+            </tr>
+            <tr>
+
+                <th id="Mars" headers="Terrestrial Name">Mars</th>
+                <td headers="Mars Mass">0.642</td>
+                <td headers="Mars Diameter">6,792</td>
+                <td headers="Mars Desnity">3933</td>
+                <td headers="Mars Gravity">3.7</td>
+                <td headers="Mars Length">24.7</td>
+                <td headers="Mars Distance">227.9</td>
+                <td headers="Mars Mean">-65</td>
+                <td headers="Mars Number">2</td>
+                <td headers="Mars Notes">The red planet</td>
+            </tr>
+            </tr>
+            <tr>
+                <th id="Jovian" rowspan="8">
+                    Jovian planets
+                </th>
+                <tr>
+            <tr>
+                <th id="Gas-giants" headers="Jovian" rowspan="3">
+                    Gas giants
+                </th>
+            <tr>
+                <th id="Jupiter" headers="Jovian Gas-giants Name">Jupiter</th>
+                <td headers="Jupiter Mass">1898</td>
+                <td headers="Jupiter Diameter">142,984</td>
+                <td headers="Jupiter Desnity">1326</td>
+                <td headers="Jupiter Gravity">23.1</td>
+                <td headers="Jupiter Length">9.9</td>
+                <td headers="Jupiter Distance">778.6</td>
+                <td headers="Jupiter Mean">-110</td>
+                <td headers="Jupiter Number">67</td>
+                <td headers="Jupiter Notes">The larget planet</td>
+
+            </tr>
+            <tr>
+                <th id="Saturn" headers="Jovian Gas-giants Name">Saturn</th>
+                <td headers="Saturn Mass">568</td>
+                <td headers="Saturn Diameter">120,536</td>
+                <td headers="Saturn Desnity">687</td>
+                <td headers="Saturn Gravity">9.0</td>
+                <td headers="Saturn Length">10.7</td>
+                <td headers="Saturn Distance">1433.5</td>
+                <td headers="Saturn Mean">-140</td>
+                <td headers="Saturn Number">62</td>
+                <td headers="Saturn Notes"></td>
+                
+                
+            </tr>
+        </tr>
+        <tr>
+            <th id="Ice-giants" headers="Jovian" rowspan="3">
+                Ice giants
+            </th>
+            <tr>
+                <th id="Uranus" headers="Jovian Ice-giants Name">Uranus</th>
+                <td headers="Uranus Mass">86.8</td>
+                <td headers="Uranus Diameter">51,118</td>
+                <td headers="Uranus Desnity">1271</td>
+                <td headers="Uranus Gravity">8.7</td>
+                <td headers="Uranus Length">17.2</td>
+                <td headers="Uranus Distance">2872.5</td>
+                <td headers="Uranus Mean">-195</td>
+                <td headers="Uranus Number">27</td>
+                <td headers="Uranus Notes"></td>
+                <tr>
+                    <th  id="Neptune" headers="Jovian Ice-giants Name">Neptune</th>
+                    <td headers="Neptune Mass">102</td>
+                    <td headers="Neptune Diameter">49,528</td>
+                    <td headers="Neptune Desnity">1638</td>
+                    <td headers="Neptune Gravity">11.0</td>
+                    <td headers="Neptune Length">16.1</td>
+                    <td headers="Neptune Distance">4495.1</td>
+                    <td headers="Neptune Mean">-200</td>
+                    <td headers="Neptune Number">14</td>
+                    <td headers="Neptune Notes"></td>
+                </tr>
+            </tr>
+            
+        </tr>
+    </tr>
+</tr>
+<tr> 
+</tr>
+<tr>
+    <th id="Dwarf" colspan="2" rowspan="2"> Dwarf planets</th>
+</tr>
+<tr>
+    <th id="Pluto" headers="Dwarf Name">Pluto</th>
+    <td headers="Pluto Mass">0.0146</td>
+    <td headers="Pluto Diameter">2370</td>
+    <td headers="Pluto Desnity">2095</td>
+    <td headers="Pluto Gravity">0.7</td>
+    <td headers="Pluto Length">153.3</td>
+    <td headers="Pluto Distance">5906.4</td>
+    <td headers="Pluto Mean">-225</td>
+    <td headers="Pluto Number">5</td>
+    <td headers="Pluto Notes">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+</tr>
+</tbody>
+</table>
+</body>
+
+</html>
